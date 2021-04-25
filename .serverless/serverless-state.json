@@ -8,9 +8,26 @@
       "name": "aws",
       "runtime": "nodejs12.x",
       "lambdaHashingVersion": "20201221",
+      "region": "us-east-1",
+      "environment": {
+        "POSTS_TABLE": "users"
+      },
+      "iamRoleStatements": [
+        {
+          "Effect": "Allow",
+          "Action": [
+            "dynamodb:DescribeTable",
+            "dynamodb:Scan",
+            "dynamodb:GetItem",
+            "dynamodb:PutItem",
+            "dynamodb:UpdateItem",
+            "dynamodb:DeleteItem"
+          ],
+          "Resource": "arn:aws:dynamodb:us-east-1:*:table/users"
+        }
+      ],
       "stage": "dev",
       "variableSyntax": "\\${([^{}:]+?(?:\\(|:)(?:[^:{}][^{}]*?)?)}",
-      "region": "us-east-1",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
@@ -147,6 +164,9 @@
                             "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-backend-dev*:*:*"
                           }
                         ]
+                      },
+                      {
+                        "$ref": "$[\"service\"][\"provider\"][\"iamRoleStatements\"][0]"
                       }
                     ]
                   }
@@ -175,13 +195,18 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-backend/dev/1619338746786-2021-04-25T08:19:06.786Z/serverless-backend.zip"
+                "S3Key": "serverless/serverless-backend/dev/1619379946470-2021-04-25T19:45:46.470Z/serverless-backend.zip"
               },
               "Handler": "handler.handler",
               "Runtime": "nodejs12.x",
               "FunctionName": "serverless-backend-dev-hello",
               "MemorySize": 1024,
               "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "POSTS_TABLE": "users"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -193,14 +218,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersion4fFLHKbUOXjKLUc2mwVda9eS4j1eK6UOJN8qfya8c": {
+          "HelloLambdaVersionmk1L8P5CVIXszZctdrWO9KMmLqalEHwQPVtRAbsgo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "VzOjJPu4m0T5LumLmTMRxsHfs+l5LYUsy8VlTtFR6V8="
+              "CodeSha256": "90ygFvSQPiOdMKYvslNFRlsCn/DsH/97dI9OcgnoFn0="
             }
           },
           "ApiGatewayRestApi": {
@@ -412,7 +437,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1619338744367": {
+          "ApiGatewayDeployment1619379942916": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -474,7 +499,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersion4fFLHKbUOXjKLUc2mwVda9eS4j1eK6UOJN8qfya8c"
+              "Ref": "HelloLambdaVersionmk1L8P5CVIXszZctdrWO9KMmLqalEHwQPVtRAbsgo"
             }
           },
           "ServiceEndpoint": {
@@ -586,6 +611,11 @@
       },
       "vpc": {}
     },
+    "custom": {
+      "settings": {
+        "POSTS_TABLE": "users"
+      }
+    },
     "pluginsData": {},
     "functions": {
       "hello": {
@@ -650,7 +680,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersion4fFLHKbUOXjKLUc2mwVda9eS4j1eK6UOJN8qfya8c"
+        "versionLogicalId": "HelloLambdaVersionmk1L8P5CVIXszZctdrWO9KMmLqalEHwQPVtRAbsgo"
       }
     },
     "configValidationMode": "warn",
@@ -658,6 +688,9 @@
     "initialServerlessConfig": {
       "service": {
         "$ref": "$[\"service\"][\"serviceObject\"]"
+      },
+      "custom": {
+        "$ref": "$[\"service\"][\"custom\"]"
       },
       "frameworkVersion": "2",
       "provider": {
@@ -671,7 +704,7 @@
     "artifact": "/Users/shehanprasanna/Desktop/servless-backend/.serverless/serverless-backend.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-backend/dev/1619338746786-2021-04-25T08:19:06.786Z",
+    "artifactDirectoryName": "serverless/serverless-backend/dev/1619379946470-2021-04-25T19:45:46.470Z",
     "artifact": "serverless-backend.zip"
   }
 }

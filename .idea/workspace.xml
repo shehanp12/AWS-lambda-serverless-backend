@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b38d230-b00d-4f83-9a2e-141c694ecdf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="3b38d230-b00d-4f83-9a2e-141c694ecdf8" name="Default Changelist" comment="aws cloud complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.serverless/serverless-backend.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-backend.zip" afterDir="false" />
@@ -89,8 +86,16 @@
       <workItem from="1619244460373" duration="505000" />
       <workItem from="1619245022601" duration="6682000" />
       <workItem from="1619293633334" duration="7000" />
-      <workItem from="1619329424009" duration="5609000" />
+      <workItem from="1619329424009" duration="8795000" />
     </task>
+    <task id="LOCAL-00001" summary="aws cloud complete">
+      <created>1619339139245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619339139245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,5 +112,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aws cloud complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="aws cloud complete" />
   </component>
 </project>
