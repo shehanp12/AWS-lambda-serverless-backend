@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b38d230-b00d-4f83-9a2e-141c694ecdf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/serverless-backend.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-backend.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/serverless-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rUm7EVhAUGlgzpXhIDkcUhUv2u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -39,7 +48,17 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -52,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
@@ -67,7 +87,9 @@
       <workItem from="1619038873826" duration="728000" />
       <workItem from="1619065894628" duration="637000" />
       <workItem from="1619244460373" duration="505000" />
-      <workItem from="1619245022601" duration="1971000" />
+      <workItem from="1619245022601" duration="6682000" />
+      <workItem from="1619293633334" duration="7000" />
+      <workItem from="1619329424009" duration="5609000" />
     </task>
     <servers />
   </component>
