@@ -3,9 +3,19 @@ const router = express.Router({
     mergeParams: true
 });
 
-const createPost = require("controllers/posts");
+const {createPost} = require("../handler");
 
-router.get('/',createPost);
+
+
+
+router.get('/', (req, res) => {
+    res.status(200).json({});
+});
+
+
+
+
+
 
 
 module.exports = {

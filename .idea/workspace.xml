@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b38d230-b00d-4f83-9a2e-141c694ecdf8" name="Default Changelist" comment="dynamo db configrations">
-      <change afterPath="$PROJECT_DIR$/controllers/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
+    <list default="true" id="3b38d230-b00d-4f83-9a2e-141c694ecdf8" name="Default Changelist" comment="aws configrations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.serverless/serverless-backend.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-backend.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.serverless/serverless-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1619329424009" duration="8795000" />
       <workItem from="1619379923861" duration="6720000" />
       <workItem from="1619412003988" duration="12000" />
-      <workItem from="1619412031574" duration="300000" />
+      <workItem from="1619412031574" duration="11465000" />
     </task>
     <task id="LOCAL-00001" summary="aws cloud complete">
       <created>1619339139245</created>
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619380194796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aws configrations">
+      <created>1619412416445</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619412416445</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aws cloud complete" />
     <MESSAGE value="dynamo db configrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamo db configrations" />
+    <MESSAGE value="aws configrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="aws configrations" />
   </component>
 </project>
